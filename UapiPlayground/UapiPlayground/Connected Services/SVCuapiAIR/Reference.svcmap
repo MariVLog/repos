@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eb24d8d3-3a7b-47be-9977-a031f54aed0b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\Mari\Downloads\uAPI_WSDLschema_Release-V18.4.1.19\Release-V18.4.1.19-V18.4\air_v47_0\Air.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AirReqRsp.xsd" MetadataType="Schema" ID="9427ad19-a437-4437-8bee-89e6add94bbd" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/air_v47_0/AirReqRsp.xsd" />
+    <MetadataFile FileName="Rail.xsd" MetadataType="Schema" ID="c6a8dc40-93e7-45cd-86a6-d17d4027bd69" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/rail_v47_0/Rail.xsd" />
+    <MetadataFile FileName="AirService.wsdl" MetadataType="Wsdl" ID="44cc0090-bcc4-482a-a0a3-a2223b1ed6a6" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/air_v47_0/Air.wsdl" />
+    <MetadataFile FileName="Common.xsd" MetadataType="Schema" ID="7b010bb1-3641-46d3-aa67-77942fdd6c39" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/common_v47_0/Common.xsd" />
+    <MetadataFile FileName="SessionContext_v1.xsd" MetadataType="Schema" ID="7419bd7f-9fde-4cfa-ba81-967d3aab384b" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/SessionContext_v1/SessionContext_v1.xsd" />
+    <MetadataFile FileName="CommonReqRsp.xsd" MetadataType="Schema" ID="3e41dbca-8b03-45b0-806a-e1a3d585b970" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/common_v47_0/CommonReqRsp.xsd" />
+    <MetadataFile FileName="Air.xsd" MetadataType="Schema" ID="43531740-a981-410f-8149-7829c1e9d5cd" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/air_v47_0/Air.xsd" />
+    <MetadataFile FileName="AirService1.wsdl" MetadataType="Wsdl" ID="9b1e66dd-3069-425e-a1ba-9f59b7071ff1" SourceId="1" SourceUrl="file:///C:/Users/Mari/Downloads/uAPI_WSDLschema_Release-V18.4.1.19/Release-V18.4.1.19-V18.4/air_v47_0/AirAbstract.wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

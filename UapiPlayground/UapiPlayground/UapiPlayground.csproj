@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1622F8B0-FCE3-44D1-A3BA-0078B1871E1A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>UapiPlayground</RootNamespace>
+    <AssemblyName>UapiPlayground</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\SVCuapiAIR\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="HttpHeaderMessageInspector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Connected Services\SVCuapiAIR\Air.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\AirReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\AirService.wsdl" />
+    <None Include="Connected Services\SVCuapiAIR\AirService1.wsdl" />
+    <None Include="Connected Services\SVCuapiAIR\Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\CommonReqRsp.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\Rail.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\SessionContext_v1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirExchangeEligibilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirExchangeMultiQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirExchangeQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirExchangeRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirExchangeTicketingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirFareDisplayRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirFareRulesRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirMerchandisingDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirMerchandisingOfferAvailabilityRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirPrePayRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirPriceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirRefundQuoteRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirRefundRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirRepriceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirRetrieveDocumentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirTicketingRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirUpsellSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AirVoidDocumentRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.AvailabilitySearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.EMDIssuanceRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.EMDRetrieveRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.FlightDetailsRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.FlightInformationRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.FlightTimeTableRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.LowFareSearchAsynchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.LowFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.RetrieveLowFareSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.ScheduleSearchRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.SeatMapRsp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse10.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse11.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse12.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse13.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse14.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse15.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse16.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse17.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse18.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse19.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse20.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse21.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse22.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse23.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse24.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse25.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse26.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse27.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse28.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse3.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse4.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse5.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse6.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse7.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse8.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SVCuapiAIR\UapiPlayground.SVCuapiAIR.serviceResponse9.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SVCuapiAIR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SVCuapiAIR\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SVCuapiAIR\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SVCuapiAIR\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
